@@ -7,3 +7,6 @@ https://docs.google.com/spreadsheets/d/1bwlzkj0iNx7Wny8fy6v24-K96rJaNKDVazH9cmpX
   - Lakukan Normalisai jika diperlukan (Membuat tabel baru jika diperlukan)
 >>Mengisi data masing-masing tabel
   (Harus diskusi terlebih dahulu)
+  
+  
+  Note : Tolong tulis hasil progres dan kendala disini.
