@@ -1,0 +1,33 @@
+create table akun (
+id_akun varchar2(20) not null,
+username varchar2(50),
+pasword varchar2(50),
+waktu_login timestamp,
+waktu_logout timestamp,
+constraint akun_pk primary key(id_akun) enable
+);
+
+create table pengguna (
+id_pengguna varchar2(20) not null,
+nama_pengguna varchar2(200),
+jenis_kelamin_pengguna varchar2(20),
+usia_pengguna int,
+alamat_pengguna varchar2(500),
+email_pengguna varchar2(200),
+no_hp_pengguna varchar2(20),
+id_akun varchar2(20),
+constraint pengguna_pk primary key(id_pengguna) enable,
+constraint pengguna_fk foreign key(id_akun) references akun(id_akun)
+on delete cascade
+);
+
+create table relawan (
+id_relawan varchar2(20) not null,
+jenis_relawan varchar2(200),
+keahlian varchar2(200),
+kloter_keberangkatan int,
+id_pengguna varchar2(20),
+constraint relawan_pk primary key(id_relawan) enable,
+constraint relawan_fk foreign key(id_pengguna) references pengguna(id_pengguna)
+on delete cascade
+);
