@@ -76,4 +76,15 @@ insert into fenomena (id_fenomena, judul_fenomena, tgl_mulai_fenomena, tgl_berak
 insert into fenomena (id_fenomena, judul_fenomena, tgl_mulai_fenomena, tgl_berakhir_fenomena, id_media, id_admin, id_pengguna) values ('FN03','Bencana Gunung Meletus','12-JUL-2019','12-AUG-2019',null,'AD03','PG03');
 insert into fenomena (id_fenomena, judul_fenomena, tgl_mulai_fenomena, tgl_berakhir_fenomena, id_media, id_admin, id_pengguna) values ('FN04','Bencana Tsunami','15-OCT-2019','15-NOV-2019',null,'AD04','PG04');
                         (sudah di RUN pada SQLDEVELOPER)
+                        
+  
+ ###Read###
+select * from admin;
+select * from akun;
+select * from bank;
+select * from donasi;
+select * from fenomena;
+select * from media_informasi;
+select * from pengguna;
+select * from relawan;
 
