@@ -1,0 +1,24 @@
+###Insert###
+- Tabel Akun :
+insert into akun (id_akun, username, password) values ('AKP01','verageulis13','veravero');   (sudah di RUN pada SQLDEVELOPER)
+
+- Tabel Pengguna :
+insert into pengguna (id_pengguna, nama_pengguna, jenis_kelamin_pengguna, usia_pengguna, alamat_pengguna, email_pengguna, no_hp_pengguna, id_akun) values ('PG10','Vera Verari','P',20,'Jl. Teuku Moh. Daud Beureueh No.108, Bandar Baru, Kec. Kuta Alam Kota Banda Aceh','veroni@yahoo.com','0897847859993','AKP01');   (sudah di RUN pada SQLDEVELOPER)
+
+- Tabel Relawan :
+insert into relawan (id_relawan, jenis_relawan, keahlian, kloter_keberangkatan, id_pengguna) values ('RL05', '', 'Menyelam', 1, 'PG01');
+
+- Tabel Bank :
+insert into bank (id_bank, nama_bank, no_telepon_bank, alamat_bank, no_rekening_bank) values ('009', 'BNI', '1500046', 'Jl. Soekarno Hatta, Manjahlega, Kec. Gedebage, Kota Bandung, Jawa Barat 40295', '5264 9987 1080 0892');   (sudah di RUN pada SQLDEVELOPER)
+
+- Tabel Media Informasi :
+insert into media_informasi (id_media, nama_media, jenis_media, no_telepon_media, email_media, alamat_media, id_akun) values ('MD01','CNN','Internasional','08123415536','redaksi@cnnindonesia.com','Jl. Kapten Tendean Kav 12-14 A, Mampang Prapatan, Jakarta, Indonesia','AKM04');
+
+- Tabel Admin :
+insert into admin (id_admin, nama_admin, jenis_kelamin_admin, email_admin, id_akun) values ('AD01', 'Shabri Arrahim', 'L', 'volunteerku@gmail.com', 'AKA03');   (sudah di RUN pada SQLDEVELOPER)
+
+- Tabel Donasi :
+insert into donasi (id_transaksi, tanggal_transaksi, no_rekening_pengguna, jumlah_donasi, id_pengguna, id_bank, id_admin) values ('', '', '', , '', '', '');
+
+- Tabel Fenomena :
+insert into fenomena (id_fenomena, jenis_fenomena, judul_fenomena, tgl_mulai_fenomena, tgl_berakhir_fenomena, id_media, id_admin, id_pengguna) values ('', '', '', '', '', '', '', '')
