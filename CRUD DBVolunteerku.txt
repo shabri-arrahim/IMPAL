@@ -34,7 +34,6 @@ insert into pengguna (id_pengguna, nama_pengguna, jenis_kelamin_pengguna, usia_p
 insert into pengguna (id_pengguna, nama_pengguna, jenis_kelamin_pengguna, usia_pengguna, alamat_pengguna, email_pengguna, no_hp_pengguna, id_akun) values ('PG10','Vera Verari','P',20,'Jl. Teuku Moh. Daud Beureueh No.108, Bandar Baru, Kec. Kuta Alam Kota Banda Aceh','veroni@yahoo.com','0897847859993','AKP01');  
                           (sudah di RUN pada SQLDEVELOPER)
 
-
 - Tabel Relawan :
 insert into relawan (id_relawan, jenis_relawan, keahlian, kloter_keberangkatan, id_pengguna) values ('RL05', '', 'Menyelam', 1, 'PG01');
 
@@ -61,7 +60,11 @@ insert into admin (id_admin, nama_admin, jenis_kelamin_admin, email_admin, id_ak
                           (sudah di RUN pada SQLDEVELOPER)
 
 - Tabel Donasi :
-insert into donasi (id_transaksi, tanggal_transaksi, no_rekening_pengguna, jumlah_donasi, id_pengguna, id_bank, id_admin) values ('', '', '', , '', '', '');
+insert into donasi (id_transaksi, tanggal_transaksi, no_rekening_pengguna, jumlah_donasi, id_pengguna, id_bank, id_admin) values ('TRX01', '10-MAY-2019', '5467 0998 4775 7854',10000000, 'PG04', '009', 'AD01');
+insert into donasi (id_transaksi, tanggal_transaksi, no_rekening_pengguna, jumlah_donasi, id_pengguna, id_bank, id_admin) values ('TRX02', '20-JUL-2019', '4562 2556 6726 7275',30000000, 'PG06', '010', 'AD03');
+insert into donasi (id_transaksi, tanggal_transaksi, no_rekening_pengguna, jumlah_donasi, id_pengguna, id_bank, id_admin) values ('TRX03', '10-AUG-2019', '4673 7573 7689 1356 ',5000000, 'PG05', '011', 'AD01');
+insert into donasi (id_transaksi, tanggal_transaksi, no_rekening_pengguna, jumlah_donasi, id_pengguna, id_bank, id_admin) values ('TRX04', '16-OCT-2019', '7993 8850 9813 8932',20000000, 'PG02', '012', 'AD04');
+                          (sudah di RUN pada SQLDEVELOPER)
 
 - Tabel Fenomena :
 insert into fenomena (id_fenomena, jenis_fenomena, judul_fenomena, tgl_mulai_fenomena, tgl_berakhir_fenomena, id_media, id_admin, id_pengguna) values ('', '', '', '', '', '', '', '')
