@@ -80,7 +80,6 @@ create table donasi (
 
 create table fenomena (
     id_fenomena varchar2(20) not null,
-    jenis_fenomena varchar2(50),
     judul_fenomena varchar2(200),
     tgl_mulai_fenomena date,
     tgl_berakhir_fenomena date,
