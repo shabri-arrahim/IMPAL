@@ -18,7 +18,7 @@ create table pengguna (
     id_pengguna varchar2(20) not null,
     nama_pengguna varchar2(200),
     jenis_kelamin_pengguna varchar2(20),
-    usia_pengguna int,
+    tanggal_lahir_pengguna date,
     alamat_pengguna varchar2(500),
     email_pengguna varchar2(200),
     no_hp_pengguna varchar2(20),
@@ -52,14 +52,32 @@ create table media_informasi (
     on delete cascade
 );
 
+create table fenomena (
+    id_fenomena varchar2(20) not null,
+    judul_fenomena varchar2(200),
+    tgl_mulai_fenomena date,
+    tgl_berakhir_fenomena date,
+    id_media varchar2(20),
+    id_admin varchar2(20),
+    id_pengguna varchar2(20),
+    constraint fenomena_pk primary key (id_fenomena) enable,
+    constraint fenomena_fk1 foreign key(id_media) references media_informasi(id_media),
+    constraint fenomena_fk2 foreign key(id_admin) references admin(id_admin),
+    constraint fenomena_fk3 foreign key(id_pengguna) references pengguna(id_pengguna)
+    on delete cascade
+);
+
 create table relawan (
     id_relawan varchar2(20) not null,
     jenis_relawan varchar2(200),
     keahlian varchar2(200),
+    bahasa_asing_yang_dikuasai varchar2(200),
     kloter_keberangkatan int,
     id_pengguna varchar2(20),
+    id_fenomena varchar2(20),
     constraint relawan_pk primary key(id_relawan) enable,
-    constraint relawan_fk foreign key(id_pengguna) references pengguna(id_pengguna)
+    constraint relawan_fk1 foreign key(id_pengguna) references pengguna(id_pengguna),
+    constraint relawan_fk2 foreign key(id_fenomena) references fenomena(id_fenomena)
     on delete cascade
 );
 
@@ -75,21 +93,6 @@ create table donasi (
     constraint donasi_fk1 foreign key(id_pengguna) references pengguna(id_pengguna),
     constraint donasi_fk2 foreign key(id_bank) references bank(id_bank),
     constraint donasi_fk3 foreign key(id_admin) references admin(id_admin)
-    on delete cascade
-);
-
-create table fenomena (
-    id_fenomena varchar2(20) not null,
-    judul_fenomena varchar2(200),
-    tgl_mulai_fenomena date,
-    tgl_berakhir_fenomena date,
-    id_media varchar2(20),
-    id_admin varchar2(20),
-    id_pengguna varchar2(20),
-    constraint fenomena_pk primary key (id_fenomena) enable,
-    constraint fenomena_fk1 foreign key(id_media) references media_informasi(id_media),
-    constraint fenomena_fk2 foreign key(id_admin) references admin(id_admin),
-    constraint fenomena_fk3 foreign key(id_pengguna) references pengguna(id_pengguna)
     on delete cascade
 );
 
