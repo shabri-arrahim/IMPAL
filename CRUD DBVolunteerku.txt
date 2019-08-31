@@ -35,10 +35,10 @@ insert into pengguna (id_pengguna, nama_pengguna, jenis_kelamin_pengguna, tangga
                           (sudah di RUN pada SQLDEVELOPER)
 
 - Tabel Relawan :
-insert into relawan (id_relawan, jenis_relawan, keahlian, bahasa_asing_yang_dikusai, kloter_keberangkatan, id_pengguna, id_fenomena) values ('RL05', 'Bencana', 'Menyelam', 'Jerman',  1, 'PG01', 'FN03');
-insert into relawan (id_relawan, jenis_relawan, keahlian, bahasa_asing_yang_dikusai, kloter_keberangkatan, id_pengguna, id_fenomena) values ('RL09', 'Bencana', 'Pendaki', null,  1, 'PG02', 'FN04');
-insert into relawan (id_relawan, jenis_relawan, keahlian, bahasa_asing_yang_dikusai, kloter_keberangkatan, id_pengguna, id_fenomena) values ('RL10', 'Event', 'MC', 'Inggris',  2, 'PG03', 'FN02');
-insert into relawan (id_relawan, jenis_relawan, keahlian, bahasa_asing_yang_dikusai, kloter_keberangkatan, id_pengguna, id_fenomena) values ('RL08', 'Event', 'EO', 'Inggris',  1, 'PG04', 'FN01');
+insert into relawan (id_relawan, jenis_relawan, keahlian, bahasa_asing_yang_dikuasai, kloter_keberangkatan, id_pengguna, id_fenomena) values ('RL05', 'Bencana', 'Menyelam', 'Jerman',  1, 'PG01', 'FN03');
+insert into relawan (id_relawan, jenis_relawan, keahlian, bahasa_asing_yang_dikuasai, kloter_keberangkatan, id_pengguna, id_fenomena) values ('RL09', 'Bencana', 'Pendaki', null,  1, 'PG02', 'FN04');
+insert into relawan (id_relawan, jenis_relawan, keahlian, bahasa_asing_yang_dikuasai, kloter_keberangkatan, id_pengguna, id_fenomena) values ('RL10', 'Event', 'MC', 'Inggris',  2, 'PG03', 'FN02');
+insert into relawan (id_relawan, jenis_relawan, keahlian, bahasa_asing_yang_dikuasai, kloter_keberangkatan, id_pengguna, id_fenomena) values ('RL08', 'Event', 'EO', 'Inggris',  1, 'PG04', 'FN01');
                         (sudah di RUN pada SQLDEVELOPER)
 
 - Tabel Bank :
