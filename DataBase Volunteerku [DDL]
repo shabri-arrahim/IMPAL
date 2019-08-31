@@ -1,9 +1,7 @@
 create table akun (
     id_akun varchar2(20) not null,
     username varchar2(50),
-    pasword varchar2(50),
-    waktu_login timestamp,
-    waktu_logout timestamp,
+    password varchar2(50),
     constraint akun_pk primary key(id_akun) enable
 );
 
