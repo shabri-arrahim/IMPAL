@@ -36,6 +36,11 @@ insert into bank (id_bank, nama_bank, no_telepon_bank, alamat_bank, no_rekening_
 
 - Tabel Media Informasi :
 insert into media_informasi (id_media, nama_media, jenis_media, no_telepon_media, email_media, alamat_media, id_akun) values ('MD01','CNN','Internasional','08123415536','redaksi@cnnindonesia.com','Jl. Kapten Tendean Kav 12-14 A, Mampang Prapatan, Jakarta, Indonesia','AKM04');
+insert into media_informasi (id_media, nama_media, jenis_media, no_telepon_media, email_media, alamat_media, id_akun) values ('MD02','KOMPAS','Nasional','08143663753','hotline@kompas.id','Palmerah Selatan No. 26-28 Jakarta 10270, Indonesia','AKM01');
+insert into media_informasi (id_media, nama_media, jenis_media, no_telepon_media, email_media, alamat_media, id_akun) values ('MD03','TRIBUN','Swasta','08135776635','redaksi@tribunnews.com','Jl Palmerah Selatan 14 Jakarta, Indonesia 10270, Jakarta, Indonesia','AKM05');
+insert into media_informasi (id_media, nama_media, jenis_media, no_telepon_media, email_media, alamat_media, id_akun) values ('MD04','IDNTIMES','Nasional','08742524664','hi@idntimes.com','Jl. Palmerah Utara 62A Jakarta Barat (11480), Indonesia','AKM03');
+insert into media_informasi (id_media, nama_media, jenis_media, no_telepon_media, email_media, alamat_media, id_akun) values ('MD05','TVONENEWS','Nasional','08746772464','publicrelations@tvone.co.id','Jl. Rawa Terate II no. 2 Kawasan Industri Pulogadung Jakarta 13260, Indonesia','AKM02');
+              (sudah di RUN pada SQLDEVELOPER)
 
 - Tabel Admin :
 insert into admin (id_admin, nama_admin, jenis_kelamin_admin, email_admin, id_akun) values ('AD01', 'Shabri Arrahim', 'L', 'volunteerku@gmail.com', 'AKA03');
