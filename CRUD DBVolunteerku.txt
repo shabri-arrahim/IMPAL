@@ -1,6 +1,25 @@
 ###Insert###
 - Tabel Akun :
-insert into akun (id_akun, username, password) values ('AKP01','verageulis13','veravero');   (sudah di RUN pada SQLDEVELOPER)
+insert into akun (id_akun, username, password) values ('AKP01','verageulis13','veravero');
+insert into akun (id_akun, username, password) values ('AKP02','yomiragi90','akuhitam');
+insert into akun (id_akun, username, password) values ('AKP03','aguskotaa33','wongdeso12');
+insert into akun (id_akun, username, password) values ('AKP04','nurulaziz12','bestfriend45');
+insert into akun (id_akun, username, password) values ('AKP05','kiteruno','kitekiteaja');
+insert into akun (id_akun, username, password) values ('AKP06','knalpotku40','r9racing');
+insert into akun (id_akun, username, password) values ('AKP07','bayusuha11','lelakitampan');
+insert into akun (id_akun, username, password) values ('AKP08','pricilacantik','duabelasmaret');
+insert into akun (id_akun, username, password) values ('AKP09','diditsusu','dancow');
+insert into akun (id_akun, username, password) values ('AKP10','tejikawa','koreapipel');
+insert into akun (id_akun, username, password) values ('AKM01','kompas','kompasasik13');
+insert into akun (id_akun, username, password) values ('AKM02','tvonenews','beritaterbaik23');
+insert into akun (id_akun, username, password) values ('AKM03','idntimes','gulugulu56');
+insert into akun (id_akun, username, password) values ('AKM04','cnnindon','yakaligan36');
+insert into akun (id_akun, username, password) values ('AKM05','tribun','dedegemes33');
+insert into akun (id_akun, username, password) values ('AKA01','apipo','gueluculoh100');
+insert into akun (id_akun, username, password) values ('AKA02','mbanr','buleganteng45');
+insert into akun (id_akun, username, password) values ('AKA03','jackmyname','otwmitikgaes33');
+insert into akun (id_akun, username, password) values ('AKA04','cubiiicheese','kejukukejumu66');   
+                (sudah di RUN pada SQLDEVELOPER)
 
 - Tabel Pengguna :
 insert into pengguna (id_pengguna, nama_pengguna, jenis_kelamin_pengguna, usia_pengguna, alamat_pengguna, email_pengguna, no_hp_pengguna, id_akun) values ('PG10','Vera Verari','P',20,'Jl. Teuku Moh. Daud Beureueh No.108, Bandar Baru, Kec. Kuta Alam Kota Banda Aceh','veroni@yahoo.com','0897847859993','AKP01');   (sudah di RUN pada SQLDEVELOPER)
