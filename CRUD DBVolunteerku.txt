@@ -28,13 +28,21 @@ insert into pengguna (id_pengguna, nama_pengguna, jenis_kelamin_pengguna, usia_p
 insert into relawan (id_relawan, jenis_relawan, keahlian, kloter_keberangkatan, id_pengguna) values ('RL05', '', 'Menyelam', 1, 'PG01');
 
 - Tabel Bank :
-insert into bank (id_bank, nama_bank, no_telepon_bank, alamat_bank, no_rekening_bank) values ('009', 'BNI', '1500046', 'Jl. Soekarno Hatta, Manjahlega, Kec. Gedebage, Kota Bandung, Jawa Barat 40295', '5264 9987 1080 0892');   (sudah di RUN pada SQLDEVELOPER)
+insert into bank (id_bank, nama_bank, no_telepon_bank, alamat_bank, no_rekening_bank) values ('009', 'BNI', '1500046', 'Jl. Soekarno Hatta, Manjahlega, Kec. Gedebage, Kota Bandung, Jawa Barat 40295', '5264 9987 1080 0892');
+insert into bank (id_bank, nama_bank, no_telepon_bank, alamat_bank, no_rekening_bank) values ('010', 'MANDIRI', '(021)52997777', 'Jl. BKR No. 124A, Cigalereng, Regol,Anco,Kec. Regol, Kota Bandung Jawa Barat', '4617 7891 5723 0999');
+insert into bank (id_bank, nama_bank, no_telepon_bank, alamat_bank, no_rekening_bank) values ('011', 'BRI', '02157987400', 'Jl. Margacinta No.30, Margasari, Kec. Buahbatu, Kota Bandung, Jawa Barat 40287', '2534 6669 3457 8286');
+insert into bank (id_bank, nama_bank, no_telepon_bank, alamat_bank, no_rekening_bank) values ('012', 'BCA', '1500888', 'Jl. Kiara Condong, Kb. Gedang, Kec. Batununggal, Kota Bandung, Jawa Barat 40274', '7835 5522 9045 1567');   
+              (sudah di RUN pada SQLDEVELOPER)
 
 - Tabel Media Informasi :
 insert into media_informasi (id_media, nama_media, jenis_media, no_telepon_media, email_media, alamat_media, id_akun) values ('MD01','CNN','Internasional','08123415536','redaksi@cnnindonesia.com','Jl. Kapten Tendean Kav 12-14 A, Mampang Prapatan, Jakarta, Indonesia','AKM04');
 
 - Tabel Admin :
-insert into admin (id_admin, nama_admin, jenis_kelamin_admin, email_admin, id_akun) values ('AD01', 'Shabri Arrahim', 'L', 'volunteerku@gmail.com', 'AKA03');   (sudah di RUN pada SQLDEVELOPER)
+insert into admin (id_admin, nama_admin, jenis_kelamin_admin, email_admin, id_akun) values ('AD01', 'Shabri Arrahim', 'L', 'volunteerku@gmail.com', 'AKA03');
+insert into admin (id_admin, nama_admin, jenis_kelamin_admin, email_admin, id_akun) values ('AD02', 'Aziz Zack', 'L', 'volunteerku@gmail.com', 'AKA01');
+insert into admin (id_admin, nama_admin, jenis_kelamin_admin, email_admin, id_akun) values ('AD03', 'Afif Ls', 'L', 'volunteerku@gmail.com', 'AKA04');
+insert into admin (id_admin, nama_admin, jenis_kelamin_admin, email_admin, id_akun) values ('AD04', 'Mban R', 'L', 'volunteerku@gmail.com', 'AKA02');
+              (sudah di RUN pada SQLDEVELOPER)
 
 - Tabel Donasi :
 insert into donasi (id_transaksi, tanggal_transaksi, no_rekening_pengguna, jumlah_donasi, id_pengguna, id_bank, id_admin) values ('', '', '', , '', '', '');
