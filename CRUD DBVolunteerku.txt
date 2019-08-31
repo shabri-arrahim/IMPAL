@@ -67,4 +67,9 @@ insert into donasi (id_transaksi, tanggal_transaksi, no_rekening_pengguna, jumla
                           (sudah di RUN pada SQLDEVELOPER)
 
 - Tabel Fenomena :
-insert into fenomena (id_fenomena, jenis_fenomena, judul_fenomena, tgl_mulai_fenomena, tgl_berakhir_fenomena, id_media, id_admin, id_pengguna) values ('', '', '', '', '', '', '', '')
+insert into fenomena (id_fenomena, judul_fenomena, tgl_mulai_fenomena, tgl_berakhir_fenomena, id_media, id_admin, id_pengguna) values ('FN01','Event Asian Games','01-MAY-2019','05-JUN-2019','MD01','AD01',null);
+insert into fenomena (id_fenomena, judul_fenomena, tgl_mulai_fenomena, tgl_berakhir_fenomena, id_media, id_admin, id_pengguna) values ('FN02','Event Tabligh Akbar se Jabar','20-JUL-2019','21-JUL-2019','MD02','AD02',null);
+insert into fenomena (id_fenomena, judul_fenomena, tgl_mulai_fenomena, tgl_berakhir_fenomena, id_media, id_admin, id_pengguna) values ('FN03','Bencana Gunung Meletus','12-JUL-2019','12-AUG-2019',null,'AD03','PG03');
+insert into fenomena (id_fenomena, judul_fenomena, tgl_mulai_fenomena, tgl_berakhir_fenomena, id_media, id_admin, id_pengguna) values ('FN04','Bencana Tsunami','15-OCT-2019','15-NOV-2019',null,'AD04','PG04');
+                        (sudah di RUN pada SQLDEVELOPER)
+
