@@ -7,6 +7,15 @@ create table akun (
     constraint akun_pk primary key(id_akun) enable
 );
 
+create table bank (
+    id_bank varchar2(20) not null,
+    nama_bank varchar2(20),
+    no_telepon_bank varchar2(30),
+    alamat_bank varchar2(200),
+    no_rekening_bank varchar2(100),
+    constraint Bank_pk primary key(id_bank) enable
+);
+
 create table pengguna (
     id_pengguna varchar2(20) not null,
     nama_pengguna varchar2(200),
@@ -21,6 +30,30 @@ create table pengguna (
     on delete cascade
 );
 
+create table admin (
+    id_admin varchar2(20) not null,
+    nama_admin varchar(200),
+    jenis_kelamin_admin varchar2(200),
+    email_admin varchar2(200),
+    id_akun varchar2(20),
+    constraint admin_pk primary key(id_admin) enable,
+    constraint admin_fk foreign key(id_akun) references akun(id_akun)
+    on delete cascade
+);
+
+create table media_informasi (
+    id_media varchar2(20) not null,
+    nama_media varchar2(200),
+    jenis_media varchar2(100),
+    no_telepon_media varchar2(20),
+    email_media varchar2(200),
+    alamat_media varchar2(500),
+    id_akun varchar2(20),
+    constraint media_informasi_pk primary key(id_media) enable,
+    constraint media_informasi_fk foreign key(id_akun) references akun(id_akun)
+    on delete cascade
+);
+
 create table relawan (
     id_relawan varchar2(20) not null,
     jenis_relawan varchar2(200),
@@ -30,15 +63,6 @@ create table relawan (
     constraint relawan_pk primary key(id_relawan) enable,
     constraint relawan_fk foreign key(id_pengguna) references pengguna(id_pengguna)
     on delete cascade
-);
-
-create table bank (
-    id_bank varchar2(20) not null,
-    nama_bank varchar2(20),
-    no_telepon_bank varchar2(30),
-    alamat_bank varchar2(200),
-    no_rekening_bank varchar2(100),
-    constraint Bank_pk primary key(id_bank) enable
 );
 
 create table donasi (
@@ -56,17 +80,6 @@ create table donasi (
     on delete cascade
 );
 
-create table admin (
-    id_admin varchar2(20) not null,
-    nama_admin varchar(200),
-    jenis_kelamin_admin varchar2(200),
-    email_admin varchar2(200),
-    id_akun varchar2(20),
-    constraint admin_pk primary key(id_admin) enable,
-    constraint admin_fk foreign key(id_akun) references akun(id_akun)
-    on delete cascade
-);
-
 create table fenomena (
     id_fenomena varchar2(20) not null,
     jenis_fenomena varchar2(50),
@@ -80,19 +93,6 @@ create table fenomena (
     constraint fenomena_fk1 foreign key(id_media) references media_informasi(id_media),
     constraint fenomena_fk2 foreign key(id_admin) references admin(id_admin),
     constraint fenomena_fk3 foreign key(id_pengguna) references pengguna(id_pengguna)
-    on delete cascade
-);
-
-create table media_informasi (
-    id_media varchar2(20) not null,
-    nama_media varchar2(200),
-    jenis_media varchar2(100),
-    no_telepon_media varchar2(20),
-    email_media varchar2(200),
-    alamat_media varchar2(500),
-    id_akun varchar2(20),
-    constraint media_informasi_pk primary key(id_media) enable,
-    constraint media_informasi_fk foreign key(id_akun) references akun(id_akun)
     on delete cascade
 );
 
