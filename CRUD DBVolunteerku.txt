@@ -35,7 +35,10 @@ insert into pengguna (id_pengguna, nama_pengguna, jenis_kelamin_pengguna, tangga
                           (sudah di RUN pada SQLDEVELOPER)
 
 - Tabel Relawan :
-insert into relawan (id_relawan, jenis_relawan, keahlian, kloter_keberangkatan, id_pengguna) values ('RL05', '', 'Menyelam', 1, 'PG01');
+insert into relawan (id_relawan, jenis_relawan, keahlian, bahasa_asing_yang_dikusai, kloter_keberangkatan, id_pengguna, id_fenomena) values ('RL05', 'Bencana', 'Menyelam', 'Jerman',  1, 'PG01', 'FN03');
+insert into relawan (id_relawan, jenis_relawan, keahlian, bahasa_asing_yang_dikusai, kloter_keberangkatan, id_pengguna, id_fenomena) values ('RL09', 'Bencana', 'Pendaki', null,  1, 'PG02', 'FN04');
+insert into relawan (id_relawan, jenis_relawan, keahlian, bahasa_asing_yang_dikusai, kloter_keberangkatan, id_pengguna, id_fenomena) values ('RL10', 'Event', 'MC', 'Inggris',  2, 'PG03', 'FN02');
+insert into relawan (id_relawan, jenis_relawan, keahlian, bahasa_asing_yang_dikusai, kloter_keberangkatan, id_pengguna, id_fenomena) values ('RL08', 'Event', 'EO', 'Inggris',  1, 'PG04', 'FN01');
 
 - Tabel Bank :
 insert into bank (id_bank, nama_bank, no_telepon_bank, alamat_bank, no_rekening_bank) values ('009', 'BNI', '1500046', 'Jl. Soekarno Hatta, Manjahlega, Kec. Gedebage, Kota Bandung, Jawa Barat 40295', '5264 9987 1080 0892');
