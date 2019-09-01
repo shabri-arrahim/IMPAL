@@ -97,3 +97,5 @@ where id_bank = '009';
 delete from relawan
 where id_relawan = 'RL09';
 
+
+Link Dokument ScreenShoot: https://docs.google.com/document/d/1ldIfSMzlSnDSQYYin7t9jJLlD5Cl4Ak-9wlcHInmiK8/edit
