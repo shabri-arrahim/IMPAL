@@ -88,3 +88,12 @@ select * from media_informasi;
 select * from pengguna;
 select * from relawan;
 
+###Update###
+update bank
+set no_telepon_bank = '14000115'
+where id_bank = '009';
+
+###Delete###
+delete from relawan
+where id_relawan = 'RL09';
+
