@@ -1,0 +1,115 @@
+
+/*Style*/
+
+body {
+    font: 16px/28px arial, sans-serif;
+    background-color: #eaeaea;
+    color: #333;    
+}
+
+.container{
+    width: 1200px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.header{
+    position: fixed;
+    width: 1180px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.header img{
+    position: absolute;
+}
+
+.menu ul li{
+    position: relative;
+    display: inline-block;
+    right: -250px;
+    margin-right: 20px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu a:hover{
+    color: #A3004D;
+}
+
+.menu .button1{
+    position: fixed;
+    left: 1060px;
+    top: 25px;
+    padding: 15px 15px;
+    border: 2px solid #A3004D; /*set warna border pada tombol*/
+    background-color: #A3004D; /*set warna backround pada tombol*/
+    color: #fafafa; /*set warna huruf pada tombol*/
+    font-weight: bold;
+}
+
+.menu .button1:hover{
+    background-color: rgb(173, 88, 128);
+    color: #fff;
+}
+
+.cover{
+    height: 700px; 
+    background-image: url(../img/cover.png);
+    background-size: cover;
+    background-position: 0 -100px;
+}
+
+.cover h1{
+    position: absolute;
+    bottom: 150px;
+    left: 140px;
+    color: #fff;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.cover .button2{
+    position: absolute;
+    left: 145px;
+    top: 460px;
+    padding: 15px 15px;
+    border: 2px solid rgb(252, 173, 62); 
+    background-color: rgb(252, 173, 62); 
+    color: #fafafa; 
+    font-weight: bold;
+}
+
+.cover .button2:hover{
+    background-color: rgb(218, 157, 73);
+    color: rgb(218, 214, 214);
+}
+
+.cover .button3{
+    position: absolute;
+    left: 330px;
+    top: 460px;
+    padding: 15px 15px;
+    border: 2px solid white; 
+    background-color: transparent; 
+    color: #fafafa; 
+    font-weight: bold;
+}
+
+.cover .button3:hover{
+    color: rgb(218, 214, 214);
+}
+
+
+
+footer{
+    position: relative;
+    background-color: #202020;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    bottom: -210px;
+}
