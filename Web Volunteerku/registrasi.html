@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <link rel="stylesheet" href="css/register.css">
+        <link rel="shortcut icon" href="img/logoMin.png">
+    </head>
+        <body>
+            <div class="container">
+                <div class="header" id="header">
+                    <img src="img/logo2.png" alt="logo">
+                    <div class="menu">
+                        <ul>
+                            <b><li><a href="#">HOME</a></li></b>
+                            <b><li><a href="#">WHAT WE DO</a></li></b>
+                            <b><li><a href="#">ABOUT US </a></li></b>
+                            <!-- <b><li><a href="#">SPONSORSHIP </a></li></b> -->
+                            <b><li><a href="#">CONTACT US </a></li></b>
+                        </ul>
+                        <form action=""><input class="button1" type="button" value="BE VOLUNTEER NOW"></form>
+                    </div>
+                </div>
+                <div class="form">
+                    <div class="container" id="colums">
+                        <!--breadcrumb-->
+                        <div class="breadcrumb clearfix">
+                            <a class="home" href="#">Home</a>
+                            <span class="navigation-pipe">&nbsp;</spann>
+                            <span class="navigation_page">Register</span>
+                        </div>
+                        <h2 class="page-heading">
+                            <span class="page-heading-title2">Registrasi</span>
+                        </h2>
+                        <div class="page-content">
+                                <div class="row">
+                                    <form method = "POST" action = "#">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label>No Identitas</label>
+                                                <input type="text" class = "form-control" name = "id" required>
+                                                <span class="helpblock">No KTP,Kartu Pelajar, atau Kartu Identitas</span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label> Nama Lengkap </label>
+                                                <input type = "text" class="form-control" name = "telepon"required>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Email</label>
+                                                <input type="email" class="form-control" name ="email" required>
+                                            </div>
+                                        </div>
+            
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label>Alamat Lengkap</label>
+                                                 <teksarea class="form-control" name="alamat"rows="1" required></teksarea>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Tipe Akun</label>
+                                                <select name="akun" class="form-control" required>
+                                                    <option value="">-- Pilih Tipe Akun --</option>
+                                                    <option value="Media">Media</option>
+                                                    <option value="user">User</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Password</label>
+                                                <input type="Password" class="form-control" name="pass" required>
+                                            </div>
+            
+                                            <button class="button" type="submit"><i class="fa fa-user"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+        </body>
+        <script type="text/javascript" src="js/index.js"></script>
+    <footer>
+        <!-- <marquee>&copy Copy right by shabri dkk</marquee> -->
+    </footer>
+</html>
