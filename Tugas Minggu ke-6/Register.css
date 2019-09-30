@@ -1,0 +1,72 @@
+/*Style*/
+
+body {
+    font: 16px/28px arial, sans-serif;
+    background-color: #eaeaea;
+    color: #333;    
+}
+
+.container{
+    width: 1200px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.header{
+    position: absolute;
+    width: 1180px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.header img{
+    position: absolute;
+}
+
+.menu ul li{
+    position: relative;
+    display: inline-block;
+    right: -270px;
+    margin-right: 20px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu a:hover{
+    color: #A3004D;
+}
+
+.menu .button1{
+    position: absolute;
+    left: 900px;
+    top: 15px;
+    padding: 15px 15px;
+    border: 2px solid #A3004D; /*set warna border pada tombol*/
+    background-color: #A3004D; /*set warna backround pada tombol*/
+    color: #fafafa; /*set warna huruf pada tombol*/
+    font-weight: bold;
+}
+
+.menu .button1:hover{
+    background-color: rgb(173, 88, 128);
+    color: #fff;
+}
+
+.form{
+    position: relative;
+    top: 100px;
+    height: 400px;
+}
+
+/* footer{
+    position: relative;
+    background-color: #202020;
+    color: white;
+    width: 1168px;
+    left: 68px;
+    text-align: center;
+    padding: 15px;
+} */
